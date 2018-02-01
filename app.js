@@ -5,7 +5,9 @@ var express         = require("express"),
     methodOverride  = require("method-override");
 
 // mongoose.connect("mongodb://localhost/User");
-mongoose.connect("mongodb://bornon13oct:skay13oct@ds221258.mlab.com:21258/sprittle");
+mongoose.connect(process.env.DATABASEURL);
+console.log(process.env.DATABASEURL);
+
 var userSchema = new mongoose.Schema({
     email: String
 });
