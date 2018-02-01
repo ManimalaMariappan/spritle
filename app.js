@@ -4,8 +4,8 @@ var express         = require("express"),
     mongoose        = require("mongoose"),
     methodOverride  = require("method-override");
 
-mongoose.connect("mongodb://localhost/User");
-// mongodb://<dbuser>:<dbpassword>@ds221258.mlab.com:21258/sprittle
+// mongoose.connect("mongodb://localhost/User");
+mongoose.connect("mongodb://bornon13oct:skay13oct@ds221258.mlab.com:21258/sprittle");
 var userSchema = new mongoose.Schema({
     email: String
 });
@@ -82,6 +82,7 @@ app.post("/subscribe", function(req, res){
              if(result)
              console.log("user already present");
          });
+         res.redirect("/");
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){
