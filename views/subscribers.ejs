@@ -1,0 +1,14 @@
+<% include partials/header %>
+
+<div class="container row subsc" style="margin:0 auto;">
+    <% users.forEach(function(user){ %>
+        <div class="col=lg-8 col-md-8 col-sm-8 col-xs-8 mails" style="text-align:center;">
+            <p><%= user.email %></p>
+        </div>
+        <div class="col=lg-3 col-md-3 col-sm-3 col-xs-3 btns">
+            <button class="btn btn-secondary" type="submit" style="background: #686868;border-radius:0px;">SEND MAIL</button>
+        </div>
+    <% }); %>
+</div>
+
+<% include partials/footer %>

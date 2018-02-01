@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Law Firm</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+	<link rel="stylesheet" href="/stylesheets/custom.css" type="text/css">
+</head>
+<body>
+	<script>
+		function myFun(){
+			var a=document.myForm.Email.value;
+			if(a.indexOf('@')<=0){
+				alert("Invalid @ position");
+				return false;
+			}
+			if((a.charAt(a.length-4)!='.')&&(a.charAt(a.length-3)!='.')){
+				alert("Invalid . position");
+				return false;
+			}
+		}
+	</script>
+	<!--<div id="header">-->
+	<!--	<div class="clearfix">-->
+	<!--		<div class="logo">-->
+	<!--			<a href="/"><img src="images/logo.png" alt="LOGO" ></a>-->
+	<!--		</div>-->
+	<!--		<nav>-->
+	<!--			<ul class="navigation">-->
+	<!--				<li class="active">-->
+	<!--					<a href="/">Home</a>-->
+	<!--				</li>-->
+	<!--				<li>-->
+	<!--					<a href="/about">About</a>-->
+	<!--				</li>-->
+	<!--				<li>-->
+	<!--					<a href="/practices">Practices</a>-->
+	<!--				</li>-->
+	<!--				<li>-->
+	<!--					<a href="/lawyers">Our Lawyers</a>-->
+	<!--				</li>-->
+	<!--				<li>-->
+	<!--					<a href="/news">News</a>-->
+	<!--					<div>-->
+	<!--						<a href="/singlepost">News Single Post</a>-->
+	<!--					</div>-->
+	<!--				</li>-->
+	<!--				<li>-->
+	<!--					<a href="/contact">Contact</a>-->
+	<!--				</li>-->
+	<!--			</ul>-->
+	<!--		</nav>-->
+	<!--	</div>-->
+	<!--</div>-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-ligh" style="background-color: #58614E;">
+  <a href="/"><img src="images/logo.png" alt="LOGO" class="imag"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars" aria-hidden="true" style="font-size:45px;"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/about">ABOUT <span class="sr-only">(current)</span></a>
+      </li><li class="nav-item active">
+        <a class="nav-link" href="/practices">PRACTICES <span class="sr-only">(current)</span></a>
+      </li><li class="nav-item active">
+        <a class="nav-link" href="/lawyers">OUR LAWYERS <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="/news" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          NEWS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/singlepost">News Single Post</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/contact">CONTACT <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>

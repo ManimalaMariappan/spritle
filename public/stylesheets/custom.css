@@ -1,0 +1,497 @@
+/*.navigation {*/
+/*	float: right;*/
+/*	list-style: none;*/
+/*	margin: 28px 0 0;*/
+/*	padding: 0;*/
+/*}*/
+/*.navigation li {*/
+/*	float: left;*/
+/*	margin-left: 30px;*/
+/*	position: relative;*/
+/*}*/
+/*.navigation li > a {*/
+/*	color: #b8c6ac;*/
+/*	font: bold 13px/24px Times, "Times New Roman", serif;*/
+/*	text-decoration: none;*/
+/*	text-shadow: 1px 1px #000;*/
+/*	text-transform: uppercase;*/
+/*}*/
+/*.navigation li.active > a, .navigation > a:hover {*/
+/*	color: #fff;*/
+/*}*/
+/*.navigation li > div {*/
+/*	background-color: #888888;*/
+/*	display: none;*/
+/*	width: 110px;*/
+/*	position: absolute;*/
+/*	left: 0px;*/
+/*	top: 24px;*/
+/*}*/
+/*.navigation li:hover > div {*/
+/*	display: block;*/
+/*}*/
+/*.navigation li > div a {*/
+/*	color: #b8c6ac;*/
+/*	font: bold 13px/24px "Times New Roman", Times, serif;*/
+/*	display: block;*/
+/*	text-align: center;*/
+/*	text-decoration: none;*/
+/*	text-shadow: none;*/
+/*}*/
+/*.navigation li > div a:hover {*/
+/*	color: #fff;*/
+/*}*/
+.bg-ligh{
+    background: #4e5944 url(../images/bg-header.jpg) repeat-x left bottom;
+    padding: 40px 0 46px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.navbar-nav li > a {
+    color: #b8c6ac;
+    /*font: bold 13px/24px Times, "Times New Roman", serif;*/
+    font-family: Times New Roman, serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px #000;
+    text-transform: uppercase;
+    margin-right:5px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #b8c6ac;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #b8c6ac;
+    text-align: center;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #b8c6ac;
+    text-align: center;
+}
+.navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    margin-right: 20px;
+    color: white;
+    border: 1px solid white;
+}
+
+
+
+/*######################################################*/
+
+@media all and (max-width: 1920px) {
+    .highlight{
+        font-size: 1.2em;
+        padding: 10px 50px 20px 50px;
+    }
+    .navbar-nav li > a {
+        font-size: 0.8em;
+    }
+    .bg-ligh{
+        padding-left: 19em;
+        padding-right: 19em;
+    }
+    .imag{
+    width: 364px;
+    }
+    .featured li{
+        font-size: 1.0em;
+    }
+    .abo{
+        border-right:1px solid lightgray;
+    }
+    .lef{
+        border-right:1px solid #afadad;
+    }
+    .rig{
+        border-left:1px solid #afadad;
+    }
+    .ind{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .ind p{
+        font: 14px/24px Arial, Helvetica, sans-serif;
+    }
+    .highlight h1 {
+        color: #57614e;
+        font: 29px/30px "Times New Roman", Times, serif;
+        margin: 0 0 12px;    
+    }.highlight h2{
+        font: 19px/24px "Times New Roman", Times, serif;
+        letter-spacing: 2px;
+        margin: 0;
+        text-transform: uppercase;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    .test span {
+        color: #626262;
+        display: block;
+        font: 14px/24px Arial, Helvetica, sans-serif;
+        text-align: right;
+    }
+    .fram{
+        height: 220px;
+        width: 268px;
+    }
+    .practices li a span{
+        position:inherit;
+        text-align:center;
+    }
+    .subsc{
+        padding:150px 0 150px 0;
+    }
+}
+@media all and (max-width: 1200px) {
+    .highlight{
+        font-size: 1.8em;
+    }
+    .navbar-nav li > a {
+        font-size: 0.8em;
+    }
+    .bg-ligh{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .imag{
+    width: 400px;
+    }
+    .featured li{
+        font-size: 1.4em;
+        text-align: center;
+    }
+    .abo{
+        border-right:1px solid lightgray;
+    }
+    .lef{
+        border-right:1px solid #afadad;
+    }
+    .rig{
+        border-left:1px solid #afadad;
+    }
+    .ind{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .highlight h1 {
+        color: #57614e;
+        font: 29px/30px "Times New Roman", Times, serif;
+        margin: 0 0 12px;    
+    }
+}
+@media all and (max-width: 1000px) {
+    .highlight{
+        font-size: 3em;
+    }
+    .navbar-nav li > a {
+        font-size: 1.8em;
+    }
+    .imag{
+    width: 700px;
+    }
+    .featured li{
+        font-size: 2.6em;
+        text-align: center;
+        padding: 100px;
+        border-bottom: 1px solid gray;
+    }
+    .box {
+        width:760px;
+        height: 514px;
+    }
+    .box img{
+        width: 100%;
+        height: 100%;
+    }
+    .featured button{
+        background: #686868;
+        font-size: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .featured h2{
+        padding: 0 -10px;
+        text-align: center;
+        padding-top: 100px;
+        font-size: 4em;
+    }
+    .test{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-top: 1px solid gray;
+    }
+    .test h2{
+        font-size: 1.5em;
+        padding-bottom: 80px;
+        padding-top: 60px;
+    }
+    .abo{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .featured{
+        padding: 0px;
+    }
+    #footer p{
+        text-align: center;
+        font-size: 2.2em;
+    }
+    #footer h4{
+        text-align: center;
+        font-size: 2.6em;
+    }
+    #footer .clearfix .col-lg-4{
+        padding: 3.2em;
+        border-bottom: 1px solid white;
+    }
+    .foot{
+        width: 100%;
+        text-align: center;
+    }
+    .foot input{
+        height: 200px;
+        width: 800px;
+    }
+    #subscribe_input{
+        border: 0 solid;
+    border-radius: 2px;
+    height: 75px;
+    padding-left: 14px;
+    width: 457px;
+    font-size: 30px;
+    }
+    .foot button {
+        font-size: 1em;
+        width: 10.5em;
+        height: 4em;
+        margin-bottom: 1em;
+    }
+    #footnote p{
+        font-size: 1em;
+    }
+    .abo, .lef, .rig{
+        border:0px;
+    }
+    .ind{
+        padding-left: 0em;
+        padding-right: 0em;
+        text-align: center;
+    }
+    .ind p{
+        font: 40px/50px Arial, Helvetica, sans-serif;
+    }
+    .highlight h1 {
+        color: #57614e;
+        font: 80px/65px "Times New Roman", Times, serif;
+        margin: 0 0 12px;
+        padding-bottom: 50px;
+    }
+    .test span {
+        color: #626262;
+        display: block;
+        font: 34px/24px Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding-top: 30px;
+    }
+    #adbox .detail p{
+        font-size: 2.0em;
+    }
+    #adbox .detail h1{
+        font-size: 2.1em;
+    }
+    .sidebar ul{
+        text-align: -webkit-center;
+        font-size: 2.6em;
+        padding: 50px;
+    }
+    .sidebar div h2{
+        text-align: center;
+        font-size: 4.6em;
+        padding-top: 50px;
+    }
+    .sidebar {
+        border-bottom: 1px solid gray;
+    }
+    .main{
+        text-align: center;
+        font-size: 2.4em;
+        padding-top: 100px;
+    }
+    .main h1{
+        font-size:2em;
+        padding-bottom:40px;
+    }
+    .main h2{
+        font-size:1.2em;
+        padding-bottom:40px;
+    }
+    .main form{
+        padding:50px;
+    }
+    .main form label{
+        font-size:0.9em;
+    }
+    .main button{
+        font-size:50px;
+    }
+    .abouts{
+        text-align: center;
+        font-size:2.5em;
+    }
+    .abouts h2{
+        font-size:1.8em;
+        padding:70px;
+    }
+    .abouts h1{
+        font-size:3em;
+        padding:80px;
+    }
+    .frame2{
+        height:350px;
+    }
+    .frame2 .box{
+        height:300px;
+        width:910px;
+    }
+    .box img{
+        /*width:910px;*/
+        /*height:300px;*/
+    }
+    .contabo{
+        padding-bottom:150px;
+        padding-top:150px;
+    }
+    .practices img{
+        height:100%;
+        width:100%;
+    }
+    .practices li{
+        float:none;
+        margin:0px;
+        margin-top:100px;
+        margin-bottom:150px;
+    }
+    .practices li a span{
+        width:100%;
+        position:inherit;
+        font-size: 40px;
+        height: 60px;
+        padding: 5px;
+    }
+    .fram{
+        height: 10em;
+        width: 40em;
+    }
+    .sidebar div p{
+        font-size: 2.3em;
+        text-align: center;
+        padding:40px;
+    }
+    .sbar{
+        border-top:1px solid darkgray;
+    }
+    .sidebar ul li a{
+        font-size:0.9em;
+    }
+    .mails{
+        font-size:2em;
+        padding:20px 0 20px 0;
+    }
+    .btns{
+        padding:20px 0 20px 0;
+    }
+    .btns button{
+        font-size:1.6em;
+    }
+    .del{
+        display:none;
+    }
+    .main .delet{
+        width:100%;
+        border-bottom: 1px solid darkgray;
+        padding:50px;
+    }
+    .main .delet ul li{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .sing{
+        width: 100%;
+        padding:50px;
+    }
+    .leff{
+        padding:0px;
+    }
+    .details p.info{
+        font-size:0.7em;
+    }
+    .details h2{
+        font-size:2em;
+        padding-top: 50px
+    }
+}
+@media all and (max-width: 500px) {
+    .highlight{
+        font-size: 4em;
+    }
+    .navbar-nav li > a {
+        font-size: 4.0em;
+        text-align: center;
+    }
+    .imag{
+    width: 600px;
+    }
+    .featured li{
+        font-size: 4.0em;
+        text-align: center;
+        padding: 100px;
+        border-bottom: 1px solid gray;
+    }
+    .box {
+        width:760px;
+        height: 514px;
+    }
+    .box img{
+        width: 100%;
+        height: 100%;
+    }
+    .featured h2{
+        padding: 0 -10px;
+        text-align: center;
+        padding-top: 100px;
+        font-size: 4em;
+    }
+    .test{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-top: 1px solid gray;
+    }
+    .test h2{
+        font-size: 1.5em;
+    }
+    .abo{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .clearfix{
+        border-bottom: 10px solid white;
+    }
+    .abo, .lef, .rig{
+        border:0px;
+    }
+}
+
+.togg{
+    font-size: 45px;
+}
+
+.featured button{
+    background: #686868;
+    border-radius:0px;
+}
+@media (max-width: 1024px){
+.ind {
+    padding-left: 0em;
+    padding-right: 0em;
+}
