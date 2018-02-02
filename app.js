@@ -5,8 +5,8 @@ var express         = require("express"),
     methodOverride  = require("method-override");
 const nodemailer = require('nodemailer');
 
-mongoose.connect("mongodb://localhost/User");
-// mongoose.connect(process.env.DATABASEURL);
+// mongoose.connect("mongodb://localhost/User");
+mongoose.connect(process.env.DATABASEURL);
 
 var userSchema = new mongoose.Schema({
     email: String
