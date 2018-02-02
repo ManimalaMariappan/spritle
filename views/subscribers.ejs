@@ -6,7 +6,9 @@
             <p><%= user.email %></p>
         </div>
         <div class="col=lg-3 col-md-3 col-sm-3 col-xs-3 btns">
-            <button class="btn btn-secondary" type="submit" style="background: #686868;border-radius:0px;">SEND MAIL</button>
+            <form method="POST" action="send/<%= user.email %>?_method=PUT">  
+                <button class="btn btn-secondary" type="submit" style="background: #686868;border-radius:0px;" onClick='addItem(this)'>SEND MAIL</button>
+            </form>
         </div>
     <% }); %>
 </div>

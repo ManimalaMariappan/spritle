@@ -85,12 +85,16 @@
         padding: 10px 50px 20px 50px;
     }
     .navbar-nav li > a {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
     .bg-ligh{
         padding-left: 19em;
         padding-right: 19em;
     }
+    .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0rem;
+}
     .imag{
     width: 364px;
     }

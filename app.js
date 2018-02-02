@@ -3,10 +3,10 @@ var express         = require("express"),
     bodyParser      = require("body-parser"),
     mongoose        = require("mongoose"),
     methodOverride  = require("method-override");
+const nodemailer = require('nodemailer');
 
-// mongoose.connect("mongodb://localhost/User");
-mongoose.connect(process.env.DATABASEURL);
-console.log(process.env.DATABASEURL);
+mongoose.connect("mongodb://localhost/User");
+// mongoose.connect(process.env.DATABASEURL);
 
 var userSchema = new mongoose.Schema({
     email: String
@@ -59,7 +59,6 @@ app.get("/subscribe", function(req, res) {
         if(err){
             console.log(err);
         } else {
-            console.log(allUsers);
             res.render("subscribers",{users:allUsers});
         }
     });
@@ -76,16 +75,100 @@ app.post("/subscribe", function(req, res){
                     User.create(sub, function(err, subscriber){
                     if(err){
                         console.log(err);
-                    } else {
-                        console.log(subscriber.email);
-                    }
+                    } 
                 });     
              }
-             if(result)
-             console.log("user already present");
          });
          res.redirect("/");
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+//***************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+app.put('/send/:mail', (req, res) => {
+  const output = `
+    <p>I would just like to say once again how excited I am about the prospect of putting my skills and experience in consulting to use on one of your projects and making a positive contribution</p>
+  `;
+  // create reusable transporter object using the default SMTP transport
+  let transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: {
+        user: 'testinternnode@gmail.com', // generated ethereal user
+        pass: 'internskay'  // generated ethereal password
+    },
+    tls:{
+      rejectUnauthorized:false
+    }
+  });
+
+  // setup email data with unicode symbols
+  let mailOptions = {
+      from: '"Nodemailer Contact" <testinternnode@gmail.com>', // sender address
+      to: req.params.mail, // list of receivers
+      subject: 'Node Contact Request', // Subject line
+      text: 'Hello world?', // plain text body
+      html: output // html body
+  };
+
+  // send mail with defined transport object
+  transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+          return console.log(error);
+      }
+
+      res.redirect("/subscribe");
+  });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+// *****************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("server has started.");
