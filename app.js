@@ -5,9 +5,10 @@ var express         = require("express"),
     methodOverride  = require("method-override");
 const nodemailer = require('nodemailer');
 
-// mongoose.connect("mongodb://localhost/User");
-mongoose.connect(process.env.DATABASEURL);
+mongoose.connect("mongodb://localhost:27017/users");
+//mongoose.connect(process.env.DATABASEURL);
 
+app.listen(3000);
 var userSchema = new mongoose.Schema({
     email: String
 });
@@ -84,28 +85,6 @@ app.post("/subscribe", function(req, res){
 
 
 
-
-
-
-
-
-
-
-
-
-
-//***************************************************************************************
-
-
-
-
-
-
-
-
-
-
-
 app.put('/send/:mail', (req, res) => {
   const output = `
     <p>I would just like to say once again how excited I am about the prospect of putting my skills and experience in consulting to use on one of your projects and making a positive contribution</p>
@@ -170,7 +149,7 @@ app.put('/send/:mail', (req, res) => {
 
 
 
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("server has started.");
-});
+//app.listen(process.env.PORT, process.env.IP, function(){
+   // console.log("server has started.");
+//});
 
